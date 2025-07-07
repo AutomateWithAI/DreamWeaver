@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.dreamweaver.app-mergeDebugResources-62:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.example.dreamweaver.app-mergeDebugResources-63:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Chase\\.gradle\\caches\\transforms-3\\837979ec466679c93d14b1d031e629d6\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",

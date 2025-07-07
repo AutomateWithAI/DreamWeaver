@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.dreamweaver.app-mergeDebugResources-62:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "com.example.dreamweaver.app-mergeDebugResources-63:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Chase\\.gradle\\caches\\transforms-3\\9d52496af18236792bb229384688c6f4\\transformed\\core-1.12.0\\res\\values-en-rAU\\values-en-rAU.xml",

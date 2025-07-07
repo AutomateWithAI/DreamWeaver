@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.dreamweaver.app-mergeDebugResources-62:/values-cs/values-cs.xml",
+            "outputFile": "com.example.dreamweaver.app-mergeDebugResources-63:/values-cs/values-cs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Chase\\.gradle\\caches\\transforms-3\\9540cde4ea8421e8ee0e41b8be247c00\\transformed\\jetified-ui-release\\res\\values-cs\\values-cs.xml",

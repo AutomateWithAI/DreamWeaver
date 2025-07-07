@@ -1,14 +1,14 @@
 [
     {
-        "merged": "com.example.dreamweaver.app-merged_res-64:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.dreamweaver.app-main-66:/xml/data_extraction_rules.xml"
+        "merged": "com.example.dreamweaver.app-merged_res-65:/layout_activity_main.xml.flat",
+        "source": "com.example.dreamweaver.app-main-67:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.dreamweaver.app-merged_res-64:/xml_backup_rules.xml.flat",
-        "source": "com.example.dreamweaver.app-main-66:/xml/backup_rules.xml"
+        "merged": "com.example.dreamweaver.app-merged_res-65:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.dreamweaver.app-main-67:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.dreamweaver.app-merged_res-64:/layout_activity_main.xml.flat",
-        "source": "com.example.dreamweaver.app-main-66:/layout/activity_main.xml"
+        "merged": "com.example.dreamweaver.app-merged_res-65:/xml_backup_rules.xml.flat",
+        "source": "com.example.dreamweaver.app-main-67:/xml/backup_rules.xml"
     }
 ]
