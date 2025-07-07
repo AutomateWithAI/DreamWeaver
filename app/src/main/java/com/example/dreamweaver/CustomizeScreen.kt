@@ -417,7 +417,7 @@ fun CustomizeScreen(
                                     }
                                 }
                                 ApiKeyValidation.VALID -> {
-                                    when (apiKeyTestResult) {
+                                    when (val result = apiKeyTestResult) {
                                         ApiKeyTestResult.SUCCESS -> {
                                             Row(verticalAlignment = Alignment.CenterVertically) {
                                                 Icon(
@@ -524,7 +524,7 @@ fun CustomizeScreen(
                                                 )
                                                 Spacer(modifier = Modifier.width(4.dp))
                                                 Text(
-                                                    text = "API error: ${apiKeyTestResult.message}",
+                                                    text = "API error: ${result.message}",
                                                     fontSize = 12.sp,
                                                     color = MaterialTheme.colorScheme.error
                                                 )

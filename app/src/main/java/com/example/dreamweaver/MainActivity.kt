@@ -11,6 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.dreamweaver.DefaultCharacterFranchises
+import com.example.dreamweaver.DefaultStoryModes
 import com.example.dreamweaver.service.StoryGeneratorService
 import com.example.dreamweaver.service.StoryResult
 import com.example.dreamweaver.ui.theme.DreamWeaverTheme
@@ -41,6 +43,7 @@ class MainActivity : ComponentActivity() {
                 // App state
                 var selectedCharacters by remember { mutableStateOf(listOf<String>()) }
                 var customCharacters by remember { mutableStateOf("") }
+                var manualShow by remember { mutableStateOf("") }
                 var childNames by remember { mutableStateOf(listOf("")) }
                 var selectedMode by remember { mutableStateOf("Playful") }
                 var holidayName by remember { mutableStateOf("") }
@@ -59,9 +62,10 @@ class MainActivity : ComponentActivity() {
                         WelcomeScreen(
                             isDarkMode = isDarkMode,
                             onToggleDarkMode = { isDarkMode = !isDarkMode },
-                            onStartClick = { 
+                            onCreateStory = {
                                 navController.navigate("character_input")
-                            }
+                            },
+                            storyModes = DefaultStoryModes
                         )
                     }
                     
@@ -69,14 +73,19 @@ class MainActivity : ComponentActivity() {
                         CharacterInputScreen(
                             isDarkMode = isDarkMode,
                             onToggleDarkMode = { isDarkMode = !isDarkMode },
-                            selectedCharacters = selectedCharacters,
-                            customCharacters = customCharacters,
-                            onCharactersUpdate = { selected, custom ->
-                                selectedCharacters = selected
-                                customCharacters = custom
-                            },
-                            onBackClick = { navController.popBackStack() },
-                            onNextClick = { navController.navigate("customize") }
+                            onBack = { navController.popBackStack() },
+                            popularCharacters = DefaultCharacterFranchises,
+                            manualShow = manualShow,
+                            onManualShowChange = { manualShow = it },
+                            manualCharacters = customCharacters,
+                            onManualCharactersChange = { customCharacters = it },
+                            onContinue = { navController.navigate("customize") },
+                            onQuickSelect = { franchise ->
+                                manualShow = franchise.name
+                                customCharacters = franchise.characters.joinToString(", ")
+                                selectedCharacters = franchise.characters
+                                navController.navigate("customize")
+                            }
                         )
                     }
                     
@@ -154,8 +163,15 @@ class MainActivity : ComponentActivity() {
                         
                         GeneratingScreen(
                             isDarkMode = isDarkMode,
-                            onToggleDarkMode = { isDarkMode = !isDarkMode },
-                            currentStep = currentStep
+                            selectedMode = selectedMode,
+                            storyModes = DefaultStoryModes,
+                            childNames = childNames,
+                            manualCharacters = if (selectedCharacters.isNotEmpty()) {
+                                selectedCharacters.joinToString(", ")
+                            } else {
+                                customCharacters
+                            },
+                            holidayName = holidayName
                         )
                     }
                     
