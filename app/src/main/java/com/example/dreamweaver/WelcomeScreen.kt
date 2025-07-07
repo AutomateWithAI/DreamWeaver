@@ -46,7 +46,9 @@ fun WelcomeScreen(
             .padding(24.dp)
     ) {
         Column(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState()),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             // Header
@@ -217,10 +219,10 @@ fun WelcomeScreen(
             Spacer(modifier = Modifier.height(32.dp))
             
             // Story Types Preview
-            LazyColumn(
+            Column(
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                items(storyModes.chunked(2)) { modeRow ->
+                storyModes.chunked(2).forEach { modeRow ->
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -253,9 +255,9 @@ fun WelcomeScreen(
                                             modifier = Modifier.size(24.dp)
                                         )
                                     }
-                                    
+
                                     Spacer(modifier = Modifier.height(12.dp))
-                                    
+
                                     Text(
                                         mode.name,
                                         fontSize = 14.sp,
