@@ -25,7 +25,6 @@
         android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
         android:label="DreamWeaver"
-        android:testOnly="true"
         android:theme="@style/Theme.DreamWeaver" >
         <activity
             android:name="com.example.dreamweaver.MainActivity"
