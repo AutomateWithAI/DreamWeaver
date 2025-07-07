@@ -11,7 +11,9 @@
         android:fullBackupContent="@xml/backup_rules"
         android:label="DreamWeaver"
         android:theme="@style/Theme.DreamWeaver"
+        android:icon="@mipmap/ic_launcher"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

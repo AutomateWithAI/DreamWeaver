@@ -15,7 +15,11 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable ic_launcher_background
 layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
 string app_name
 style Theme.DreamWeaver
 xml backup_rules

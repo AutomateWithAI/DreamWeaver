@@ -23,6 +23,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
         android:label="DreamWeaver"
         android:theme="@style/Theme.DreamWeaver" >
         <activity
