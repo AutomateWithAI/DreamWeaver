@@ -1,0 +1,13 @@
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\service\StoryGeneratorService.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\ApiKeyHelper.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\api\OpenAIApiService.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\ui\theme\Color.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\api\OpenAIModels.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\StoryScreen.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\GeneratingScreen.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\MainActivity.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\CharacterInputScreen.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\ui\theme\Type.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\WelcomeScreen.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\CustomizeScreen.kt
+E:\AI\AndroidProject\app\src\main\java\com\example\dreamweaver\ui\theme\Theme.kt
